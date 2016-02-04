@@ -8,6 +8,9 @@ All the scripts are written in cloujure script.
 
 You are ready to code!
 
+Typically you have to create your own namespace and put the code there.
+Also do not forget to register your command in hubot/init-scripts it shoud bind to function wich takes hubot response object as a parameter.
+
 ## Tesing hubot locally
 If you want to see how your script behave in hubot, do the following:
 
