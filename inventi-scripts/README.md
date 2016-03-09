@@ -14,19 +14,21 @@ Typically you have to create your own namespace and put the code there. Then bin
 ## Tesing hubot locally
 If you want to see how your script behave in hubot, compile it and start your own bot:
 
-1. Compile with prod option - ``lein cljsbuild once prod``. This should create ``app/index.js`` file.
-2. Once build is done, run the hubot, from the main dir ``./bin/hubot ``
-3. Enter commands like you would do in chat e.g. ``hubot do something``
+1. Clean generated sources - ``lein clean``
+2. Compile with prod option - ``lein cljsbuild once prod``. This should create ``app/index.js`` file.
+3. Once build is done, run the hubot, from the main dir ``./bin/hubot ``
+4. Enter commands like you would do in chat e.g. ``hubot do something``
 
 ## Prod build
 Before releasing your code make sure you have tested it on local hubot.
 
 1. Add command insturctions to ``src/help.js``.
 2. Commit code to the git
-3. Compile prod code - ``lein cljsbuild once prod``
-4. Commit prod code to the git
-5. Push code to the repo.
-6. Do pull request if you have no commit access.
+3. Clean generated sources - ``lein clean``
+4. Compile prod code - ``lein cljsbuild once prod``
+5. Commit prod code to the git
+6. Push code to the repo.
+7. Do pull request if you have no commit access.
 
 After the push hubot will automatically deploy to heroku.
 
