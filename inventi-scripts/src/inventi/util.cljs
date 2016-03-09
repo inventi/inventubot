@@ -58,3 +58,7 @@
 
 (defn map->json [o]
   (t/write (t/writer :json-verbose) o))
+
+(defn string->int [s]
+  (js/parseInt s))
+
