@@ -11,7 +11,7 @@ This is the list of things you have to do to get started hacking the scripts.
 You are ready to code!
 Typically you have to create your own namespace and put the code there. Then bind your command regexp to function in hubot/init-scripts. See other script sources for example how to do that.
 
-## Tesing hubot locally
+## Testing hubot locally
 If you want to see how your script behave in hubot, compile it and start your own bot:
 
 1. Clean generated sources - ``lein clean``
